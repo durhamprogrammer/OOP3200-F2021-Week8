@@ -25,11 +25,7 @@ public class Program
         return value * value;
     }
 
-    /**
-     * This function builds an array of Person objects by instantiating NUM_OF_PEOPLE Person objects
-     *
-     * @param people an array of Person objects
-     */
+    /*
     public static void buildPersonArray(Person[] people)
     {
         for (int i = 0; i < NUM_OF_PEOPLE; i++)
@@ -53,6 +49,15 @@ public class Program
             people.add(new Person());
         }
     }
+     */
+
+    public static void buildStudentLinkedList(LinkedList<Student> students)
+    {
+        for (int i = 0; i < NUM_OF_PEOPLE; i++)
+        {
+            students.add(new Student());
+        }
+    }
 
     /**
      * The entry point for our program
@@ -61,10 +66,14 @@ public class Program
      */
     public static void main(String[] args)
     {
+        var students = new LinkedList<Student>();
 
-        var people = new LinkedList<Person>();
+        buildStudentLinkedList(students);
 
-        buildPersonLinkedList(people);
+
+        //var people = new LinkedList<Person>();
+
+        //buildPersonLinkedList(people);
 
         //ArrayList<Person> people = new ArrayList<Person>(); // creates a new empty list of Person object shape
 
@@ -88,13 +97,17 @@ public class Program
         // Step 2. use the Scanner object to get the "next" line of data in this case a String value
         String name = inputObject.nextLine();
 
+        System.out.print("Enter your student id: ");
+        String studentID = inputObject.nextLine();
+
         System.out.print("Enter your age: ");
         int age = inputObject.nextInt();
 
-        Person person = new Person(name, age);
+        Student student = new Student(name, age, studentID);
 
-        people.set(0, person);
-        people.get(0).SaysHello();
+        students.set(0, student);
+        students.get(0).SaysHello();
+        students.get(0).Studies();
 
     }
 }

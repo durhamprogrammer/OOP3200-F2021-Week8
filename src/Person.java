@@ -1,4 +1,4 @@
-public class Person
+public abstract class Person
 {
     // Instance Variables
     private int m_age;

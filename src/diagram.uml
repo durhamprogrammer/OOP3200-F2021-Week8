@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="35.5" y="-185.5">Program</node>
+    <node x="473.25589622641496" y="-592.0">Student</node>
+    <node x="70.5" y="-958.0">Person</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Student" target="Person" relationship="GENERALIZATION">
+      <point x="-60.0" y="-112.0" />
+      <point x="525.755896226415" y="-637.0" />
+      <point x="200.0" y="-637.0" />
+      <point x="40.0" y="138.0" />
+    </edge>
+    <edge source="Program" target="Person" relationship="DEPENDENCY">
+      <point x="-100.0" y="-85.5" />
+      <point x="-40.0" y="138.0" />
+    </edge>
+    <edge source="Program" target="Student" relationship="CREATE">
+      <point x="40.0" y="-85.5" />
+      <point x="260.0" y="-276.75" />
+      <point x="585.755896226415" y="-276.75" />
+      <point x="0.0" y="112.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.6661429693637078" showDependencies="true" x="220.0" y="-331.5" />
+  <SelectedNodes>
+    <node>Student</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>Open Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
